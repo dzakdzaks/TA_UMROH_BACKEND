@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 29, 2019 at 01:16 AM
+-- Generation Time: May 29, 2019 at 09:55 AM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -50,7 +50,8 @@ CREATE TABLE `jamaah` (
 --
 
 INSERT INTO `jamaah` (`id_jamaah`, `id_user`, `no_ktp`, `nama_lengkap`, `tempat_lahir`, `pekerjaan`, `tanggal_lahir`, `jenis_kelamin`, `alamat`, `nama_ibu_kandung`, `kewarganegaraan`, `no_telpon`, `email`, `keperluan`) VALUES
-(1, 8, '3275232322', 'Muhammad Dzaky Rahmanto', 'Bekasi', 'Freelancer Programmers', '2010-05-29', 'Laki - Laki', 'Jatirasa Jatiasih Bekasi Indonesias', 'Rahasiiiaaas', 'Turkeys', '+6287876002477', 'dzakyrahmantos@gmail.com', 'Premium');
+(1, 8, '3275232322', 'Muhammad Dzaky Rahmanto', 'Bekasi', 'Freelancer Programmers', '2010-05-29', 'Laki - Laki', 'Jatirasa Jatiasih Bekasi Indonesias', 'Rahasiiiaaas', 'Turkeys', '+6287876002477', 'dzakyrahmantos@gmail.com', 'Premium'),
+(5, 9, '355880', 'Ttgggh', 'Ggv', 'Ggg', '2019-05-29', 'Laki - Laki', 'fcvb', 'Ffvf', 'Fcc', '+6288999', 'ggvg', 'Premium');
 
 -- --------------------------------------------------------
 
@@ -76,8 +77,7 @@ CREATE TABLE `paket_umroh` (
 
 INSERT INTO `paket_umroh` (`id`, `nama`, `durasi`, `transit`, `jarak_to_madinah`, `jarak_to_mekah`, `maskapai`, `harga`, `keberangkatan`) VALUES
 (1, 'Premium', '9 Hari', 'Tidak Transit', '150 m', '750 m', '- Garuda Indonesia			- Saudi Arabian Airlines', '27.000.000', '1 Mei 2019'),
-(2, 'Standar', '9 Hari', 'Transit', '150 m', '800 m', '- Emirates			- Etihad Airways			- Malaysian Airlanes			- Oman Air', '24.000.000', '1 Juni 2019'),
-(3, 'asdbsa', 'nasdn', 'hansdh', 'nahdnasd', 'dnasnd', 'dn', 'hna', 'dnasjdnsa');
+(2, 'Standar', '9 Hari', 'Transit', '150 m', '800 m', '- Emirates			- Etihad Airways			- Malaysian Airlanes			- Oman Air', '24.000.000', '1 Juni 2019');
 
 -- --------------------------------------------------------
 
@@ -97,18 +97,8 @@ CREATE TABLE `tiket` (
 --
 
 INSERT INTO `tiket` (`id_tiket`, `id_user`, `id_paket`, `status`) VALUES
-(2, 8, 2, 'Sudah Dibayar'),
-(4, 8, 1, 'Di Proses'),
-(5, 10, 2, 'Belum Dibayar'),
-(6, 10, 1, 'Sudah Dibayar'),
-(7, 8, 1, 'Belum Dibayar'),
-(8, 8, 1, 'Belum Dibayar'),
-(9, 8, 2, 'Belum Dibayar'),
-(10, 8, 2, 'Belum Dibayar'),
-(11, 8, 2, 'Di Proses'),
-(12, 11, 2, 'Sudah Dibayar'),
-(13, 11, 1, 'Belum Dibayar'),
-(14, 11, 2, 'Belum Dibayar');
+(21, 9, 1, 'Sudah Dibayar'),
+(23, 8, 1, 'Sudah Dibayar');
 
 -- --------------------------------------------------------
 
@@ -177,7 +167,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `jamaah`
 --
 ALTER TABLE `jamaah`
-  MODIFY `id_jamaah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_jamaah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `paket_umroh`
@@ -189,7 +179,7 @@ ALTER TABLE `paket_umroh`
 -- AUTO_INCREMENT for table `tiket`
 --
 ALTER TABLE `tiket`
-  MODIFY `id_tiket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_tiket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `users`
