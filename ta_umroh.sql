@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 29, 2019 at 09:55 AM
+-- Generation Time: May 31, 2019 at 11:31 AM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -98,7 +98,8 @@ CREATE TABLE `tiket` (
 
 INSERT INTO `tiket` (`id_tiket`, `id_user`, `id_paket`, `status`) VALUES
 (21, 9, 1, 'Sudah Dibayar'),
-(23, 8, 1, 'Sudah Dibayar');
+(23, 8, 1, 'Sudah Dibayar'),
+(24, 9, 2, 'Di Proses');
 
 -- --------------------------------------------------------
 
@@ -173,13 +174,13 @@ ALTER TABLE `jamaah`
 -- AUTO_INCREMENT for table `paket_umroh`
 --
 ALTER TABLE `paket_umroh`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tiket`
 --
 ALTER TABLE `tiket`
-  MODIFY `id_tiket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id_tiket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `users`
