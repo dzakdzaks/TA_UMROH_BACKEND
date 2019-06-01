@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 31, 2019 at 11:31 AM
+-- Generation Time: Jun 01, 2019 at 01:28 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -89,17 +89,19 @@ CREATE TABLE `tiket` (
   `id_tiket` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `id_paket` int(11) NOT NULL,
-  `status` varchar(50) NOT NULL
+  `status` varchar(50) NOT NULL,
+  `bukti` varchar(255) NOT NULL,
+  `ket_bukti` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tiket`
 --
 
-INSERT INTO `tiket` (`id_tiket`, `id_user`, `id_paket`, `status`) VALUES
-(21, 9, 1, 'Sudah Dibayar'),
-(23, 8, 1, 'Sudah Dibayar'),
-(24, 9, 2, 'Di Proses');
+INSERT INTO `tiket` (`id_tiket`, `id_user`, `id_paket`, `status`, `bukti`, `ket_bukti`) VALUES
+(21, 9, 1, 'Sudah Dibayar', 'imagebuktitransfer/5cf2476c81b5e.jpg', '32432324234 - Mandiri - Dzak'),
+(23, 8, 1, 'Di Proses', 'imagebuktitransfer/5cf2476c81b5e.jpg', '32432324234 - Mandiri - Dzak'),
+(24, 9, 2, 'Belum Dibayar', '', '');
 
 -- --------------------------------------------------------
 
