@@ -19,6 +19,8 @@ if (isset($id)) {
 			$data = array();
 			$data['id_tiket'] = $row['id_tiket'];		
 			$data['id_user'] = $row['id_user'];		
+			$data['bukti'] = $row['bukti'];	
+			$data['keterangan_bukti'] = $row['ket_bukti'];			
 		// $data['name'] = $row['name'];			
 		// $data['email'] = $row['email'];			
 		// $data['alamat'] = $row['alamat'];			

@@ -20,7 +20,9 @@ if (isset($id)) {
 		//membuat variable array untuk menampung data pembeli sementara sebelum di masukan kedalam array response dan di jadkan data json
 			$data = array();
 			$data['id_tiket'] = $row['id_tiket'];		
-			$data['id_user'] = $row['id_user'];				
+			$data['id_user'] = $row['id_user'];	
+			$data['bukti'] = $row['bukti'];
+			$data['keterangan_bukti'] = $row['ket_bukti'];			
 		// $data['name'] = $row['name'];			
 		// $data['email'] = $row['email'];			
 		// $data['alamat'] = $row['alamat'];			
