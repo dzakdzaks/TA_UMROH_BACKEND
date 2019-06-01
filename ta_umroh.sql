@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2019 at 01:28 PM
+-- Generation Time: Jun 01, 2019 at 06:04 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -100,8 +100,10 @@ CREATE TABLE `tiket` (
 
 INSERT INTO `tiket` (`id_tiket`, `id_user`, `id_paket`, `status`, `bukti`, `ket_bukti`) VALUES
 (21, 9, 1, 'Sudah Dibayar', 'imagebuktitransfer/5cf2476c81b5e.jpg', '32432324234 - Mandiri - Dzak'),
-(23, 8, 1, 'Di Proses', 'imagebuktitransfer/5cf2476c81b5e.jpg', '32432324234 - Mandiri - Dzak'),
-(24, 9, 2, 'Belum Dibayar', '', '');
+(23, 8, 1, 'Sudah Dibayar', 'imagebuktitransfer/5cf2476c81b5e.jpg', '32432324234 - Mandiri - Dzak'),
+(27, 8, 2, 'Belum Dibayar', '', ''),
+(28, 9, 2, 'Belum Dibayar', 'imagebuktitransfer/5cf2a065c19c2.jpg', 'Ct6ghhhyyyfd - Ftyhbngg - Hhhh'),
+(29, 9, 1, 'Di Proses', 'imagebuktitransfer/5cf2a0b0d4ddc.jpg', 'Hehsbssbhssshsbbehsuehe');
 
 -- --------------------------------------------------------
 
@@ -182,7 +184,7 @@ ALTER TABLE `paket_umroh`
 -- AUTO_INCREMENT for table `tiket`
 --
 ALTER TABLE `tiket`
-  MODIFY `id_tiket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_tiket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `users`
