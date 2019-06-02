@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2019 at 06:04 PM
+-- Generation Time: Jun 02, 2019 at 12:35 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -99,11 +99,9 @@ CREATE TABLE `tiket` (
 --
 
 INSERT INTO `tiket` (`id_tiket`, `id_user`, `id_paket`, `status`, `bukti`, `ket_bukti`) VALUES
-(21, 9, 1, 'Sudah Dibayar', 'imagebuktitransfer/5cf2476c81b5e.jpg', '32432324234 - Mandiri - Dzak'),
-(23, 8, 1, 'Sudah Dibayar', 'imagebuktitransfer/5cf2476c81b5e.jpg', '32432324234 - Mandiri - Dzak'),
-(27, 8, 2, 'Belum Dibayar', '', ''),
-(28, 9, 2, 'Belum Dibayar', 'imagebuktitransfer/5cf2a065c19c2.jpg', 'Ct6ghhhyyyfd - Ftyhbngg - Hhhh'),
-(29, 9, 1, 'Di Proses', 'imagebuktitransfer/5cf2a0b0d4ddc.jpg', 'Hehsbssbhssshsbbehsuehe');
+(45, 9, 1, 'Di Proses', 'imagebuktitransfer/45_1_9_5cf3a57bf18e6.jpg', 'Vnewbwbheye'),
+(46, 9, 2, 'Belum Dibayar', '', ''),
+(47, 9, 2, 'Sudah Dibayar', 'imagebuktitransfer/47_2_9_5cf3a52eb1595.jpg', 'Heuhshsgwb');
 
 -- --------------------------------------------------------
 
@@ -128,7 +126,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `alamat`, `ttl`, `goldar`, `notelp`, `role`) VALUES
-(8, 'Muhammad Dzaky Rahmantoo', 'dzaky@gmail.com', 'dzaky', 'Bekasi', 'Bekasi 15 Juli 2001', 'A', '+6287876002470', '2'),
+(8, 'Muhammad Dzaky Rahmanto', 'dzaky@gmail.com', 'dzaky', 'Bekasi', 'Bekasi 15 Juli 2001', 'A', '+6287876002470', '2'),
 (9, 'Admin', 'admin@gmail.com', 'admin', '-', '-', '-', '-', '1'),
 (10, 'polisi', 'polisi@gmail.com', 'polisi', 'di rumah pak polisi', 'di rsud', 'B', '+63223423234', '2'),
 (11, 'Joe', 'joe@gmail.com', 'joe123', 'Kalimantan ', 'Bekasi, 22 Maret 2001', 'O', '+62+62872436431', '2');
@@ -178,13 +176,13 @@ ALTER TABLE `jamaah`
 -- AUTO_INCREMENT for table `paket_umroh`
 --
 ALTER TABLE `paket_umroh`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tiket`
 --
 ALTER TABLE `tiket`
-  MODIFY `id_tiket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id_tiket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `users`

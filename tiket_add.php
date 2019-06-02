@@ -10,7 +10,7 @@
 		
 		$sql = mysql_query('INSERT INTO tiket(id_user, id_paket, status) VALUES ("'.$idUser.'","'.$idPaket.'","'.$status.'")'); 
 
-		$res = array();
+		$response = array();
 
 		if ($sql) {
 			$response['result'] = 1;

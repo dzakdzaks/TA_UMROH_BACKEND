@@ -8,7 +8,7 @@ $idPaket = $_POST['id_paket'];
 $status = $_POST['status'];
 $image = $_POST['image'];
 $keterangan = $_POST['keterangan'];
-$path = "imagebuktitransfer/" . uniqid() . ".jpg";
+$path = "imagebuktitransfer/" . $id . "_" . $idPaket . "_" . $idUser . "_" . uniqid() . ".jpg";
 
 
 if (isset($id) && isset($idUser) && isset($idPaket) && isset($status) && isset($image) && isset($keterangan)) {
